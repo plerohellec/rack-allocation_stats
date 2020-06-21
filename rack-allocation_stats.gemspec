@@ -17,8 +17,8 @@ Gem::Specification.new do |spec|
                          %w[CHANGELOG.markdown LICENSE README.markdown TODO.markdown]
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "allocation_stats", "0.1.4"
-  spec.add_dependency "yajl-ruby"
+  spec.add_dependency "allocation_stats", "0.1.5"
+  spec.add_dependency "yajl-ruby", "~>1.4.1"
   spec.add_development_dependency "rspec", "< 3"
 
   # ">= 2.1.0" seems logical, but rubygems thought that "2.1.0.dev.0" did not fit that bill.
