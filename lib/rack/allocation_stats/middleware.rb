@@ -48,7 +48,7 @@ module Rack::AllocationStats
     def headers(body)
       {
         "Content-Type"   => @content_type,
-        "Content-Length" => body.inject(0) { |len, part| len + bytesize(part) }.to_s
+        "Content-Length" => body.inject(0) { |len, part| len + part.bytesize }.to_s
       }
     end
 
